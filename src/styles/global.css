@@ -2,25 +2,27 @@
    SIA PORTFOLIO — GLOBAL STYLES
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* ============================================================
    CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
   --bg-primary: #080A10;
-  --bg-secondary: #111622;
-  --bg-card: #171D2A;
+  --bg-secondary: #0D111A;
+  --bg-card: #141923;
   --accent: #4169E1;
   --accent-hover: #5B82FF;
+  --accent-red: #E50914;
   --accent-muted: #684A9E;
   --text-primary: #EDEAF5;
   --text-secondary: #A8AFC1;
-  --border-subtle: rgba(237, 234, 245, 0.12);
-  --border-accent: rgba(65, 105, 225, 0.3);
+  --border-subtle: rgba(237, 234, 245, 0.1);
+  --border-accent: rgba(65, 105, 225, 0.35);
 
-  --font-heading: 'Space Grotesk', 'Sora', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-cinema: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-editorial: 'Playfair Display', serif;
 
   --radius-sm: 6px;

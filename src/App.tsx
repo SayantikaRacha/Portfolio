@@ -60,8 +60,25 @@ function App() {
     <AuthProvider>
       <HashRouter>
         <Routes>
-          <Route element={<PublicLayout selectedProfile={selectedProfile} onProfileChange={setSelectedProfile} />}>
-            <Route index element={<HomePage selectedProfile={selectedProfile} />} />
+          <Route
+            element={
+              <PublicLayout
+                selectedProfile={selectedProfile}
+                onProfileChange={setSelectedProfile}
+                onReplayIntro={() => setAppState('intro')}
+                onOpenProfileSelector={() => setAppState('profile-select')}
+              />
+            }
+          >
+            <Route
+              index
+              element={
+                <HomePage
+                  selectedProfile={selectedProfile}
+                  onReplayIntro={() => setAppState('intro')}
+                />
+              }
+            />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/projects/:slug" element={<ProjectDetailPage />} />
             <Route path="/skills" element={<SkillsPage />} />
