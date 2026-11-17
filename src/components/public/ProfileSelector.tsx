@@ -104,7 +104,7 @@ export function ProfileSelector({ onSelect }: Props) {
         }}
       >
         {profiles.map((p, i) => (
-          <motion.div
+          <motion.button
             key={p.id}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -119,6 +119,10 @@ export function ProfileSelector({ onSelect }: Props) {
               width: 'clamp(140px, 18vw, 180px)',
               cursor: 'pointer',
               textAlign: 'center',
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              color: 'inherit',
             }}
           >
             {/* Square Avatar Tile */}
@@ -239,7 +243,7 @@ export function ProfileSelector({ onSelect }: Props) {
             >
               {p.subtitle}
             </p>
-          </motion.div>
+          </motion.button>
         ))}
       </div>
 

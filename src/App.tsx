@@ -29,6 +29,7 @@ import { AdminFiles } from './pages/admin/AdminFiles'
 import { AdminSettings } from './pages/admin/AdminSettings'
 import { ProtectedRoute } from './components/admin/ProtectedRoute'
 import './styles/global.css'
+import './App.css'
 
 type AppState = 'intro' | 'profile-select' | 'portfolio'
 
